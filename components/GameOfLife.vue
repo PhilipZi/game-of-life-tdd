@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-center pt-20">
     <div :class="['grid gap-1', `grid-cols-${columns}`]">
       <div v-for="(row, rowIndex) in grid" :key="rowIndex">
         <div
