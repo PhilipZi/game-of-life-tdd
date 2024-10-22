@@ -1,75 +1,30 @@
-# Nuxt Minimal Starter
+# Game of Life - Nuxt 3, Tailwind CSS & TDD
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Dies ist eine Implementierung des **Game of Life** in **Nuxt 3** mit **Vue 3**, **Tailwind CSS** und testgetriebener Entwicklung (**TDD**) unter Verwendung von **Vitest** für die Tests. Das Ziel dieses Projekts ist es, ein vollständiges Beispiel für TDD mit 100% Testabdeckung zu erstellen.
+
+## Projektübersicht
+
+Das **Game of Life** ist ein zellulärer Automat, der nach den folgenden Regeln funktioniert:
+
+1. Eine lebende Zelle mit weniger als zwei lebenden Nachbarn stirbt (Unterbevölkerung).
+2. Eine lebende Zelle mit zwei oder drei lebenden Nachbarn bleibt am Leben.
+3. Eine lebende Zelle mit mehr als drei lebenden Nachbarn stirbt (Überbevölkerung).
+4. Eine tote Zelle mit genau drei lebenden Nachbarn wird wiederbelebt (Wiederbelebung).
+
+Dieses Projekt implementiert diese Regeln, wobei das Spielfeld dynamisch in Vue gerendert wird und das Styling durch Tailwind CSS unterstützt wird.
+
+## Technologien
+
+- [Nuxt 3](https://nuxt.com/)
+- [Vue 3](https://vuejs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vitest](https://vitest.dev/)
 
 ## Setup
 
-Make sure to install dependencies:
+### 1. Klone das Repository:
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+git clone https://github.com/your-username/game-of-life-nuxt.git
+cd game-of-life-nuxt
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
