@@ -27,8 +27,8 @@
 import { ref } from "vue";
 
 const props = defineProps({
-  rows: { type: Number, default: 10 },
-  columns: { type: Number, default: 10 },
+  rows: { type: Number, default: 12 },
+  columns: { type: Number, default: 12 },
 });
 
 const grid = ref(
