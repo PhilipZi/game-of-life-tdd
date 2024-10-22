@@ -12,6 +12,7 @@
       </div>
     </div>
   </div>
+  <p class="text-white flex justify-center">'click on some empty cells'</p>
   <div class="flex justify-center">
     <button
       @click="nextGeneration()"
