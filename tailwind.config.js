@@ -12,4 +12,9 @@ export default {
     extend: {},
   },
   plugins: [],
+  safelist: [
+    {
+      pattern: /grid-cols-\d+/,
+    },
+  ],
 };

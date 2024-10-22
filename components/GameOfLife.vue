@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center">
-    <div class="grid gap-1" :class="`grid-cols-${columns}`">
+    <div :class="['grid gap-1', `grid-cols-${columns}`]">
       <div v-for="(row, rowIndex) in grid" :key="rowIndex">
         <div
           v-for="(cell, colIndex) in row"
@@ -26,8 +26,8 @@
 import { ref } from "vue";
 
 const props = defineProps({
-  rows: { type: Number, default: 8 },
-  columns: { type: Number, default: 8 },
+  rows: { type: Number, default: 10 },
+  columns: { type: Number, default: 10 },
 });
 
 const grid = ref(
